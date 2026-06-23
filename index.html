@@ -3,15 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realizacje LBPro</title>
-</head>
-<body>
-    <h1>Realizacje LBPro</h1>
-    <p>Portfolio naszych realizacji.</p>
 
-    <ul>
-        <li><a href="./projekt-1/">Projekt 1</a></li>
-        <li><a href="./projekt-2/">Projekt 2</a></li>
-    </ul>
+    <title>Realizacje LBPro</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f5f5f5;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            display: block;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #222;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .project:hover {
+            transform: translateY(-3px);
+        }
+
+        .project h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Realizacje LBPro</h1>
+
+    <div class="projects">
+
+        <a class="project" href="./DogWatch/">
+            <h2>DogWatch</h2>
+            <p>Zobacz materiały i screenshoty projektu.</p>
+        </a>
+
+        <a class="project" href="./Enika/">
+            <h2>Enika</h2>
+            <p>Zobacz materiały i screenshoty projektu.</p>
+        </a>
+
+    </div>
+
 </body>
 </html>
